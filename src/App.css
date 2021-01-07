@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+.App body{
+  height: 100%;
+}
+
+.App-header {
+  background-image: url('./img/header-bg.jpg');
+  padding: 45px 300px 0 300px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: rgb(224, 224, 224);
+}
+
+.Header-nav-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: rgb(224, 224, 224);
+}
+
+.App-header img{
+  width: 250px;
+}
+
+.Desktop-menu span{
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.Header-main{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
