@@ -6,16 +6,28 @@
   height: 100%;
 }
 
+.Mobile-menu-button{
+  display: none;
+}
+
+.Mobile-menu{
+  display:none;
+}
+
 .App-header {
   background-image: url('./img/header-bg.jpg');
-  padding: 45px 300px 0 300px;
-  height: 100vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
+  align-content: center;
+  /* justify-content: space-around; */
+  box-sizing: border-box;
   color: rgb(224, 224, 224);
 }
 
 .Header-nav-bar{
+  /* position: fixed; */
+  padding: 10vh 15vw 10vh 15vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,6 +40,15 @@
   width: 250px;
 }
 
+.Desktop-menu{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.Desktop-menu{
+  /* padding-right: 50px; */
+}
 .Desktop-menu span{
   margin-left: 30px;
   font-size: 18px;
@@ -35,8 +56,54 @@
 }
 
 .Header-main{
+  margin-top: 20vh;
   display: flex;
   align-content: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.Header-main #text1{
+  font-size: 100px;
+}
+
+@media(max-width: 991px){
+  .Desktop-menu{
+    display: none;
+  }
+
+  .Header-nav-bar{
+    padding: 20px 10vw 20px 10vw;
+    background-color: #212529;
+    height: 50px;
+  }
+
+  .App-header img{
+    /* margin-left: 10vw; */
+    width: 150px;
+  }
+
+  .Mobile-menu-button{
+    display: initial;
+    cursor:pointer;
+  }
+
+  .Mobile-menu{
+    display: initial;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background: #212529;
+    position: fixed;
+    right: 0;
+    top:60px;
+    flex-direction: column;
+    justify-content: space-around;
+ 
+  }
+
+  .Mobile-menu span{
+    font-size: 20px;
+  }
+
 }
